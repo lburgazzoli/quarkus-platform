@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+   <profiles>
+        <profile>
+            <id>camel-staging</id>
+            <repositories>
+                <repository>
+                    <id>apache-camel-staging</id>
+                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>apache-camel-staging</id>
+                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+   </profiles>
+   <activeProfiles>     
+      <activeProfile>camel-staging</activeProfile>
+   </activeProfiles>
+</settings>
